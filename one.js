@@ -1,8 +1,12 @@
-function getEvenNumber() {
-    var arr = [4,5,7,8,14,45,76];
 
-    var evens = arr.filter(number = number % 2 ==0);
-    document.write('Even numbers ;' + evens);
+function getEvenNumber(array) {
+    let arr = [];
 
-}
-getEvenNumber();
+    for(let i=0;i<array.length;i++) {
+        if (i % 2 ===0) {
+            arr.push(array[i]);
+        }
+        return arr;
+    }
+    console.log(array);
+    }
